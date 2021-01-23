@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>CreditShelf App</title>
+    </head>
+    <style>
+        * {
+            font-family: Helvetica, Arial, sans-serif;
+        }
+        .app {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .map-container {
+            height: 500px;
+            width: 75%;
+        }
+
+        .leaflet-control-layers {
+            text-align: left /* override for map legend */
+        }
+    </style>
+    <body>
+    <div class="app">
+        <h1>NYC Cycle-Vehicle Collisions</h1>
+        <div class="map-container">
+            {% include "map.html" %}
+        </div>
+    </div>
+    </body>
+</html>
